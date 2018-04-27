@@ -8,6 +8,12 @@ class Layout extends Component {
     state = {
        showNav: false
     }
+
+    toggleSidenav = (action) => {
+        this.setState({
+            showNav: action
+        })
+    }
  
     render(){
         return(

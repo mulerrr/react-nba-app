@@ -3,9 +3,9 @@ import style from './header.css'
 import { Link } from 'react-router-dom';
 
 import FontAwesome from 'react-fontawesome';
+import SideNav from './SideNav/sideNav';
 
 const Header = (props) => {
-
 
     const navBars = () => (
         <div className={style.bars}>
@@ -29,6 +29,7 @@ const Header = (props) => {
 
     return (
         <header className={style.header}>
+            <SideNav {...props}/>
             <div className={style.headerOpt}>
                 {navBars()}
                 {logo()}
